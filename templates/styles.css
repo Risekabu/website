@@ -1,0 +1,8 @@
+.div-con-separador {
+    border-bottom: 1px solid #c81818;
+    /* Un borde inferior gris claro */
+    margin-bottom: 20px;
+    /* Espacio de 20px entre elementos adyacentes */
+    padding-bottom: 20px;
+    /* Relleno inferior de 20px para separación */
+}

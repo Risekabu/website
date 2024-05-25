@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantástico - Tu Panadería Favorita</title>
+    <link rel="icon" href="../static/images/abudesserts.jpg" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffeeba;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #343a40;
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-section {
+            background-color: #f8d7da;
+            padding: 10px;
+            /* Reducir el padding */
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .contact-section {
+            background-color: #d4edda;
+            padding: 10px;
+            /* Reducir el padding */
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .contact-section p {
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 2px 20px;
+            /* Ajustar el padding */
+            text-align: center;
+            margin-top: 0;
+            /* Agregar un margen superior */
+            width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a Pantástico</h1>
+        <img src="../static/images/abudesserts.jpg" alt="Logo de Pantástico" width="200" height="150">
+        <p>¡Tu Panadería Favorita desde 2024!</p>
+    </header>
+
+    <div class="main-content">
+        <h2>Nuestros Productos</h2>
+        <p>Descubre nuestra amplia variedad de panes, pasteles, galletas y más.</p>
+        <a href="{{ url_for('views.productos') }}" class="button">Ver Productos</a>
+    </div>
+
+    <div class="about-section">
+        <h2>Nuestras sucursales</h2>
+        <a href="https://maps.app.goo.gl/Li6wwWD8eN5GNwdj9" target="_blank"><img src="../static/images/zaragoza01.jpg"
+                alt="Descripción de la imagen" width="200" height="150"></a>
+        <p>Conocé nuestra sucursal fundadora en Zaragoza, La Libertad Este</p>
+        <p>Haz click en la imagen para ir a Google Maps!</p>
+    </div>
+
+    <div class="contact-section">
+        <div style="display: inline-block; text-align: left; vertical-align: top; width: 65%;">
+            <h2>Contactanos</h2>
+            <p><a href="tele:2660-6666">2660-6666</a></p>
+            <p><a href="mailto:contacto_pantastico@isa.com">contacto_pantastico@isa.com</a></p>
+            <p><a href="https://x.com/risek_abu" target="_blank">X del desarrollador</a></p>
+            <p><a href="https://web.whatsapp.com/" target="_blank" style="color: green;">Whatsapp</a></p>
+        </div>
+        <div style="display: inline-block; text-align: left; vertical-align:vertical-align: top;">
+            <h2>Nuestras políticas</h2>
+            <p><a href="https://docs.google.com/document/d/1xvsSYR6s7DcI_XuOhsYk2PzwpYrDhYTOjAYqewRKHSY/edit?usp=sharing"
+                    target="_blank" style="color: rgb(0, 0, 0);">Privacidad y seguridad</a></p>
+            <p><a href="https://forms.gle/UJXkd46RRhZtvroK7" target="_blank" style="color: rgb(0, 0, 0);">Encuesta de
+                    calidad</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pantástico - Todos los derechos reservados. Version 1.02 BETA TESTING</p>
+    </footer>
+</body>
+
+</html>
